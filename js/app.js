@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-// Create app
-
-// Configure app
-
-// Landing page controller: define $scope.number as a number
-
-=======
 var data;
 var myApp = angular.module('myApp', ['ui.router'])
 // Config route provider
@@ -51,14 +43,9 @@ var myApp = angular.module('myApp', ['ui.router'])
     data = $scope.achievements = dat;
   })
 })
->>>>>>> completed-exercise
 
 // About page controller: define $scope.about as a string
+.controller('AboutController', function($scope){
+  $scope.about = "Here's some information about this page."
+})
 
-
-<<<<<<< HEAD
-// Content controller: define $scope.url as an image
-
-
-=======
->>>>>>> completed-exercise
