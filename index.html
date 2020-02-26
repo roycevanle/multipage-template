@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
+
 <head>
-    <!--Import Google Icon Font-->
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -30,42 +25,26 @@
 </head>
 
 <body>
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-
  <!--Navbar is here -->
-  <div id="wrapper">
-    <div class="container-fluid">
-      <div class="header">
-          <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
-            <li class="col-xs-3">
-              <h4><a ui-sref="home">Home</a></h4>
-            </li>
-            <li class="col-xs-3">
-              <h4><a ui-sref="projects">Projects</a></h4>
-            </li>
-            <li class="col-xs-3">
-              <h4><a ui-sref="achievements">Achievements</a></h4>
-            </li>
-            <li class="col-xs-3">
-              <h4><a ui-sref="about">About</a></h4>
-            </li>
-          </nav>
-  		</div>
-    </div>
+    <nav role="navigation">
+      <h4><a ui-sref="home">Home</a></h4>
+      <h4><a ui-sref="projects">Projects</a></h4>
+      <h4><a ui-sref="achievements">Achievements</a></h4>
+      <h4><a ui-sref="about">About</a></h4>
+    </nav>
 
-    <!--Content of the different pages gets displayed here-->
-    <div class="container content">
-      <div ui-view></div>
-    </div>
 
-    <!--Footer goes here-->
-    <div class="footer">
-      <footer class="page-footer blue-grey">
-          &copy;Copyright 2015 . Royce Le
-      </footer>
-    </div>
+  <!--Content of the different pages gets displayed here-->
+  <div class="container content">
+    <div ui-view></div>
   </div>
+
+  <!--Footer goes here-->
+  <div class="footer">
+    <footer class="page-footer blue-grey">
+        &copy;Copyright 2015 . Royce Le
+    </footer>
+  </div>
+
 </body>
 </html>
